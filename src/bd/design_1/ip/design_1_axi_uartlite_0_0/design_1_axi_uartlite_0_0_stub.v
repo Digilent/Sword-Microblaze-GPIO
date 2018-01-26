@@ -1,10 +1,10 @@
 // Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2016.4 (win64) Build 1756540 Mon Jan 23 19:11:23 MST 2017
-// Date        : Wed Jan 24 11:32:33 2018
+// Date        : Fri Jan 26 11:00:57 2018
 // Host        : WK142 running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode synth_stub
-//               c:/Users/arthur/Documents/GitHub/Sword-Microblaze-GPIO/src/bd/design_1/ip/design_1_axi_uartlite_0_0/design_1_axi_uartlite_0_0_stub.v
+//               C:/Users/arthur/Documents/GitHub/Sword-Microblaze-GPIO/src/bd/design_1/ip/design_1_axi_uartlite_0_0/design_1_axi_uartlite_0_0_stub.v
 // Design      : design_1_axi_uartlite_0_0
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7k325tffg900-2

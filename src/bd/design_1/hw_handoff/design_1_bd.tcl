@@ -559,65 +559,6 @@ CONFIG.XML_INPUT_FILE.VALUE_SRC {DEFAULT} \
   create_bd_addr_seg -range 0x80000000 -offset 0x80000000 [get_bd_addr_spaces microblaze_0/Data] [get_bd_addr_segs mig_7series_0/memmap/memaddr] SEG_mig_7series_0_memaddr
   create_bd_addr_seg -range 0x80000000 -offset 0x80000000 [get_bd_addr_spaces microblaze_0/Instruction] [get_bd_addr_segs mig_7series_0/memmap/memaddr] SEG_mig_7series_0_memaddr
 
-  # Perform GUI Layout
-  regenerate_bd_layout -layout_string {
-   guistr: "# # String gsaved with Nlview 6.6.5b  2016-09-06 bk=1.3687 VDI=39 GEI=35 GUI=JA:1.6
-#  -string -flagsOSRD
-preplace port sys_clk_n -pg 1 -y 880 -defaultsOSRD
-preplace port ddr3_sdram -pg 1 -y 830 -defaultsOSRD
-preplace port sys_clk_p -pg 1 -y 860 -defaultsOSRD
-preplace port led_16bits -pg 1 -y 570 -defaultsOSRD
-preplace port dip_switches_16bits -pg 1 -y 590 -defaultsOSRD
-preplace port usb_uart -pg 1 -y 1150 -defaultsOSRD
-preplace port rgb_led -pg 1 -y 700 -defaultsOSRD
-preplace port sseg -pg 1 -y 1050 -defaultsOSRD
-preplace port keypad -pg 1 -y 1030 -defaultsOSRD
-preplace port reset -pg 1 -y 900 -defaultsOSRD
-preplace port sys_diff_clock -pg 1 -y 840 -defaultsOSRD
-preplace inst mig_7series_0 -pg 1 -lvl 4 -y 870 -defaultsOSRD
-preplace inst microblaze_0_axi_periph -pg 1 -lvl 3 -y 640 -defaultsOSRD
-preplace inst axi_gpio_0 -pg 1 -lvl 4 -y 580 -defaultsOSRD
-preplace inst axi_gpio_1 -pg 1 -lvl 4 -y 1040 -defaultsOSRD
-preplace inst mdm_1 -pg 1 -lvl 1 -y 200 -defaultsOSRD
-preplace inst axi_gpio_2 -pg 1 -lvl 4 -y 700 -defaultsOSRD
-preplace inst rst_mig_7series_0_200M -pg 1 -lvl 1 -y 390 -defaultsOSRD
-preplace inst microblaze_0 -pg 1 -lvl 2 -y 200 -defaultsOSRD
-preplace inst axi_uartlite_0 -pg 1 -lvl 4 -y 1160 -defaultsOSRD
-preplace inst axi_mem_intercon -pg 1 -lvl 3 -y 310 -defaultsOSRD
-preplace inst microblaze_0_local_memory -pg 1 -lvl 3 -y 80 -defaultsOSRD
-preplace netloc mig_7series_0_mmcm_locked 1 0 5 40 480 390J 460 NJ 460 NJ 460 1480
-preplace netloc rst_mig_7series_0_200M_mb_reset 1 1 1 370
-preplace netloc mig_7series_0_DDR3 1 4 1 NJ
-preplace netloc rst_mig_7series_0_200M_bus_struct_reset 1 1 2 NJ 370 860
-preplace netloc rst_mig_7series_0_200M_interconnect_aresetn 1 1 2 NJ 410 870
-preplace netloc microblaze_0_Clk 1 0 5 10 1040 380 1040 850 1040 1190 770 1460
-preplace netloc sys_clk_p_1 1 0 4 NJ 860 NJ 860 NJ 860 NJ
-preplace netloc microblaze_0_axi_periph_M03_AXI 1 3 1 1170
-preplace netloc microblaze_0_axi_periph_M00_AXI 1 3 1 1150
-preplace netloc microblaze_0_M_AXI_DP 1 2 1 830
-preplace netloc axi_mem_intercon_M00_AXI 1 3 1 1180
-preplace netloc microblaze_0_M_AXI_DC 1 2 1 N
-preplace netloc microblaze_0_ilmb_1 1 2 1 840
-preplace netloc sys_diff_clock_1 1 0 4 NJ 840 NJ 840 NJ 840 NJ
-preplace netloc rst_mig_7series_0_200M_peripheral_aresetn 1 1 3 NJ 430 880 1060 1200
-preplace netloc sys_clk_n_1 1 0 4 NJ 880 NJ 880 NJ 880 NJ
-preplace netloc axi_gpio_1_GPIO2 1 4 1 NJ
-preplace netloc microblaze_0_axi_periph_M01_AXI 1 3 1 1160
-preplace netloc microblaze_0_M_AXI_IC 1 2 1 N
-preplace netloc axi_gpio_0_GPIO2 1 4 1 NJ
-preplace netloc axi_uartlite_0_UART 1 4 1 NJ
-preplace netloc axi_gpio_0_GPIO 1 4 1 NJ
-preplace netloc mig_7series_0_ui_clk_sync_rst 1 0 5 30 850 NJ 850 NJ 850 1140J 160 1470
-preplace netloc microblaze_0_axi_periph_M02_AXI 1 3 1 1150
-preplace netloc microblaze_0_dlmb_1 1 2 1 830
-preplace netloc axi_gpio_2_GPIO 1 4 1 NJ
-preplace netloc microblaze_0_debug 1 1 1 N
-preplace netloc axi_gpio_1_GPIO 1 4 1 NJ
-preplace netloc mdm_1_debug_sys_rst 1 0 2 20 260 360
-preplace netloc reset_1 1 0 4 NJ 900 NJ 900 NJ 900 NJ
-levelinfo -pg 1 -10 200 610 1010 1330 1500 -top 0 -bot 1230
-",
-}
 
   # Restore current instance
   current_bd_instance $oldCurInst

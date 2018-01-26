@@ -1,11 +1,11 @@
 -- Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2016.4 (win64) Build 1756540 Mon Jan 23 19:11:23 MST 2017
--- Date        : Wed Jan 24 11:33:17 2018
+-- Date        : Fri Jan 26 11:00:04 2018
 -- Host        : WK142 running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode funcsim
---               c:/Users/arthur/Documents/GitHub/Sword-Microblaze-GPIO/src/bd/design_1/ip/design_1_dlmb_v10_0/design_1_dlmb_v10_0_sim_netlist.vhdl
--- Design      : design_1_dlmb_v10_0
+-- Command     : write_vhdl -force -mode funcsim -rename_top design_1_dlmb_v10_0 -prefix
+--               design_1_dlmb_v10_0_ design_1_ilmb_v10_0_sim_netlist.vhdl
+-- Design      : design_1_ilmb_v10_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
 -- Device      : xc7k325tffg900-2
@@ -50,8 +50,6 @@ entity design_1_dlmb_v10_0_lmb_v10 is
   attribute C_LMB_DWIDTH of design_1_dlmb_v10_0_lmb_v10 : entity is 32;
   attribute C_LMB_NUM_SLAVES : integer;
   attribute C_LMB_NUM_SLAVES of design_1_dlmb_v10_0_lmb_v10 : entity is 1;
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_dlmb_v10_0_lmb_v10 : entity is "lmb_v10";
 end design_1_dlmb_v10_0_lmb_v10;
 
 architecture STRUCTURE of design_1_dlmb_v10_0_lmb_v10 is
@@ -140,7 +138,7 @@ entity design_1_dlmb_v10_0 is
   attribute NotValidForBitStream : boolean;
   attribute NotValidForBitStream of design_1_dlmb_v10_0 : entity is true;
   attribute CHECK_LICENSE_TYPE : string;
-  attribute CHECK_LICENSE_TYPE of design_1_dlmb_v10_0 : entity is "design_1_dlmb_v10_0,lmb_v10,{}";
+  attribute CHECK_LICENSE_TYPE of design_1_dlmb_v10_0 : entity is "design_1_ilmb_v10_0,lmb_v10,{}";
   attribute downgradeipidentifiedwarnings : string;
   attribute downgradeipidentifiedwarnings of design_1_dlmb_v10_0 : entity is "yes";
   attribute x_core_info : string;
